@@ -1,24 +1,38 @@
 body{
     font-family: "Montserrat",sans-serif;
+    text-align: center;
 }
 
 #title{
     background-color: #ff4c68;
     color: #fff;
+    text-align: left;
+}
+#title .container-fluid{
+    padding: 3% 15% 7%;
 }
 .container-fluid{
-    padding: 3% 15%;
+   padding: 7% 15%;
+}
+/*Sections*/
+.colored-section{
+    background-color: #ff4c68;
+    color: #fff;
+
+
+}
+.white-section{
+    background-color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat",sans-serif;
 }
 h1{
-    font-family: "Montserrat", sans-serif;
     font-size: 3.5rem; 
     line-height: 1.5;
 }
-h2{
-    font-family: "Montserrat",sans-serif;
-    font-size: 3rem;
-    line-height: 1.5;
-}
+
 /*NavBar*/
 .navbar{
     padding: 4.5rem;
@@ -46,6 +60,19 @@ h2{
 .title-image{
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+
+}
+@media (max-width: 1028px) {
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+    #title{
+        text-align: left;
+    }
+    
 }
 
 .fa{
@@ -56,7 +83,8 @@ h2{
     color: #ff4c68;
 }
 #features{
-    text-align: center;
+   
+    position: relative;
 }
 .featureH3{
     font-size: 1.5rem;
@@ -67,9 +95,11 @@ h2{
     color: #8f8f8f;
 }
 #testimonials{
-    text-align: center;
     background-color: #ef8172;
-    color: #fff;
+}
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
 }
 .testimonial-image{
     width: 10%;
@@ -77,11 +107,10 @@ h2{
     margin: 20px;
 }
 .carousel-item{
-    padding: 7% 15%;
+   
 }
 #press{
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 .press-image{
@@ -89,10 +118,32 @@ h2{
     margin: 20px 20px 50px;
 }
 /*Pricing*/
+.price-text{
+    font-size: 3rem;
+    line-height: 1.5;
+
+}
 #pricing{
     padding: 100px;
-    text-align: center;
 }
 .pricing-column{
     padding: 3% 2%;
+}
+
+.ctaH3{
+    font-size: 3rem;
+}
+#footer{
+   
+}
+.social-icon{
+    margin: 20px 10px;
+}
+.footerP{
+    font-family: "Ubuntu";
+    font-size: .7rem;
+}
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
 }
